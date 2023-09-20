@@ -1,0 +1,6 @@
+db-configmap
+apiVersion
+kind: ConfigMap
+metadata:
+  name: db-configmap
+data:
