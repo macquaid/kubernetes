@@ -5,5 +5,7 @@ metadata:
 spec:
   type: NodePort
   Ports:
-  - port:80
-    #targetPort:80
+    - port:80
+      #targetPort:80
+  selector:
+    app: primeiro-pod
