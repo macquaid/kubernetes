@@ -10,19 +10,6 @@ spec:
       image: aluracousrs/mysql-db:1
       ports:
         - containerPort: 3306
-      env:
-        - name: MYSQL_ROOT_PASSWORD
-          valueFrom:
-            configMfapKeyRef:
-              name: db-configmap
-              key: MYSQL_ROOT_PASSWORD
-        - name: MYSQL_PASSWORD
-          valueFrom:
-            configMfapKeyRef:
-              name: db-configmap
-              key: MYSQL_PASSWORD
-        - name: MYSQL_DATABASE
-          valueFrom:
-            configMfapKeyRef:
-              name: db-configmap
-              key: MYSQL_DATABASE
+      envFrom:
+        - configMfapRef:
+          name: db-configmap
