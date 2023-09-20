@@ -1,2 +1,7 @@
 docker -> containers
-kubernet -> pods
+kubernet -> pods(capsula(containers))
+pod tem IP
+  container tem porta (se todos os containeres pararem o pod morre-finalizado)
+    um novo pod é criado - novo ip
+cubectl - comunica com API - para criar pods(declarativo)
+
