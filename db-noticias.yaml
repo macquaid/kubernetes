@@ -16,3 +16,13 @@ spec:
             configMfapKeyRef:
               name: db-configmap
               key: MYSQL_ROOT_PASSWORD
+        - name: MYSQL_PASSWORD
+          valueFrom:
+            configMfapKeyRef:
+              name: db-configmap
+              key: MYSQL_PASSWORD
+        - name: MYSQL_DATABASE
+          valueFrom:
+            configMfapKeyRef:
+              name: db-configmap
+              key: MYSQL_DATABASE
