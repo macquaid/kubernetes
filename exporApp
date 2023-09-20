@@ -1,1 +1,11 @@
 
+svc - ip fixo - ip do servico - pois o ip do pod é dinamico quando recriado
+
+  servico
+    clusterIp
+    nodePort
+    loadBalance
+
+todo pod precisa ter seu svc pra receber cominicação
+
+
