@@ -10,5 +10,8 @@ spec:
       image: aluracursos/sistema-noticias:1
     Ports:
       - port:80
+    EnvFrom:
+      - configMapRef:
+        name: sistema-cofnigmap
       
       
